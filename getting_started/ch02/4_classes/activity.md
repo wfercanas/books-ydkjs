@@ -17,12 +17,13 @@ The user will interact with the CLI, so you must use Node to develop the game.
 2. If you have to substract one life, but the user has zero lifes left, the game is over.
 3. The game displays the whole list of letters that are left, so the user can decide its next guess.
 4. The updated list of letters is printed in console after each attempt
-5. The game also displays the state of the current word after each attempt
-6. An example of a starting word: \_ \_ \_ \_ \_
-7. An example of a word in process: h \_ l l o
-8. An example of a word completed: h e l l o
-9. When the user runs out of lifes, the game is over and the user is informed in the terminal.
-10. When the user correctly guesses the word, the game finished and the user is congratulated in the terminal.
+5. If the user inserts more than one letter in the prompt, the user loses one life and is informed that can only insert one letter.
+6. The game also displays the state of the current word after each attempt
+7. An example of a starting word: \_ \_ \_ \_ \_
+8. An example of a word in process: h \_ l l o
+9. An example of a word completed: h e l l o
+10. When the user runs out of lifes, the game is over and the user is informed in the terminal.
+11. When the user correctly guesses the word, the game finished and the user is congratulated in the terminal.
 
 ## Words
 
