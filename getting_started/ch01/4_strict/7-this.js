@@ -1,5 +1,3 @@
-// Test in Node and the browser
-
 // "use strict";
 function declarativeThis() {
   console.log("declarative", this, "\n", "------------------------");
