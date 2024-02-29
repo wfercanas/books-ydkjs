@@ -3,7 +3,7 @@
 // 3. Make the program work without adding new lines of code (use the existing ones)
 
 sports = ["basketball", "soccer", "swimming"];
-favoriteSport = sports[0]; // try changing the index
+favoriteSport = sports[0];
 
 if (favoriteSport === "basketball") {
   favoritePlayer = "Stephen Curry";

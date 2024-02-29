@@ -1,5 +1,8 @@
-// Execute recipe() with some parameters to print the transfer
-// Refactor without creating new variables or creating new blocks (scopes)
+/*
+1- This program helps a user make a transfer and get the invoice
+2- Currently the program isn't working properly, so think about how to fix it
+3- Refactor without creating new variables or creating new blocks (scopes)
+*/
 
 "use strict";
 
@@ -15,7 +18,7 @@ function transfer(money) {
   amount = money + tax;
 }
 
-function recipe(amount) {
+function invoice(amount) {
   balance -= amount;
   console.log(`
     transfer: ${money}\n
@@ -24,5 +27,3 @@ function recipe(amount) {
     New balance: ${balance}
   `);
 }
-
-recipe();
