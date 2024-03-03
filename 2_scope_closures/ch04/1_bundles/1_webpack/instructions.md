@@ -19,7 +19,7 @@ This exercise is about bundling a small project using webpack v5. This project d
 9. Check what does the `_.join()` method do in lodash.
 10. In **index.js**, create the Greeting component. This component is a function that is able to get an array of strings, join them using `_.join()` and insert them into the #root element of the HTML document.
 11. Don't export Greeting.
-12. Execute Greeting() at the end of **index.js**.
+12. Execute `Greeting(["Hello", "World"])` at the end of **index.js**.
 13. Add **index.js** as a script in **index.html**
 14. Open **index.html** in the browser and check that your greeting is on screen.
 
@@ -41,5 +41,6 @@ This exercise is about bundling a small project using webpack v5. This project d
 1. Do you notice something strange in main.js?
 2. Which of the three versions of stitching separate files to make them work together do you see? (ydkjs lecture)
 3. How many kB does main.js use?
-4. What happens to main.js if you don't `import _ from 'lodash'` and build the code again?
-5. Without lodash, how many kB does main.js use?
+4. How many seconds does the build process last?
+5. What happens to main.js if you don't `import _ from 'lodash'` and build the code again?
+6. Without lodash, how many kB does main.js use?
