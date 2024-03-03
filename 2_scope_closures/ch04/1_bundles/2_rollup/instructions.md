@@ -2,7 +2,7 @@
 
 ## Scope
 
-This exercise is about bundling a small project using webpack v5. This project doesn't tries to use the leanest to zero configuration of webpack so you can just check the process of bundling at its simplest form.
+This exercise is about bundling a small project using **rollup**. This project doesn't tries to use the simplest configuration so you can just check the process of bundling at its easier to grasp form.
 
 ## Instructions
 
