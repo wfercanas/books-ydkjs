@@ -1,4 +1,4 @@
-# Webpack
+# Rollup
 
 ## Scope
 
