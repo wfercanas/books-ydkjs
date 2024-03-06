@@ -1,7 +1,11 @@
 /*
   1. Check the following comparisons 
-  2. Refactor the expressions modifying without modifying the values themselves, so that they print what is expected.
-  3. You can change the operators or use methods that wrap the values.
+  2. Refactor the expressions to achieve the expected value.
+  3. You can change:
+    - the strictness of the operation (coercion)
+    - the range of the operation (example: less than instead of less or equal to)
+    - use methods that wrap the values 
+  4. You can't use != or !== operators.
 */
 
 const comparisons = [

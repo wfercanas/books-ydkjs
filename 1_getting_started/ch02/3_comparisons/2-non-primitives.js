@@ -1,3 +1,12 @@
+/*
+  1. This exercise is about comparing values, either primitives or non-primitives.
+  2. In the values array, there are some values to be compared and the expected result.
+  3. Code the compare function to achieve the expected results in values.
+  4. You can't change or reorder the properties on the objects.
+  5. It doesn't matter if the properties between the two compared objects are not in the same order, if the properties and their values
+      are equal, then the comparison should return true.
+*/
+
 const cities = {
   colombia: "bogota",
   spain: "madrid",
@@ -50,8 +59,8 @@ const values = [
     values: [
       cities,
       {
-        colombia: "bogota",
         spain: "madrid",
+        colombia: "bogota",
         australia: "canberra",
       },
     ],
