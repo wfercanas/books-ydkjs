@@ -4,9 +4,7 @@
 var badIdea = { oops: "Do not!" };
 
 {
-  console.log(oops);
+  console.log(oops); // Do not!
 }
 
-// with (badIdea) {
-//   console.log(oops);
-// }
+

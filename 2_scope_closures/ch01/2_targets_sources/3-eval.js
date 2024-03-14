@@ -2,7 +2,6 @@
 // "use strict";
 
 function badIdea() {
-  eval("var oops = 'Do not!'");
-  console.log(oops);
+  console.log(oops); // Do not!
 }
-badIdea();
+badIdea(); 
