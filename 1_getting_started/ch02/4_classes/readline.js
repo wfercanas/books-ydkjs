@@ -1,9 +1,7 @@
-const readline = require("node:readline").createInterface({
+const readline = require("node:readline/promises").createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-readline.question(`What's your name?\n`, (name) => {
-  console.log(`Hi ${name}`);
-  readline.close();
-});
+const answer = readline.question(`What's your name?\n`)
+console.log(answer);

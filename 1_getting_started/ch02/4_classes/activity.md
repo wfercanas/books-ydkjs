@@ -4,7 +4,7 @@ This activity is about developing the hangman game using both classes and module
 
 ## The game
 
-As you know, the hangman game is about guessing a word before running out of attempts. The word is chosen randomly by the game and the player has finite attempts to guess the words. If the player runs out of attempts, the user loses the game.
+As you know, the hangman game is about guessing a word before running out of attempts. The word is chosen randomly by the game and the player has finite attempts to guess the letters. If the player runs out of attempts, the user loses the game.
 The user then has to complete the word by making guesses letter by letter, until the whole word is formed.
 
 ## Environment
