@@ -1,5 +1,6 @@
 /*
-  1. Write a program that defines a starting value and each time a function is executed, that value is increased in a constant value
+  1. Write a program that starts defining an initial number value.
+  2. Create a function that when is executed, the initial value is increased in a constant amount.
   2. The executed function cannot receive parameters and must print the new value to console
 
   Example:

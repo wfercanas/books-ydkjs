@@ -1,6 +1,7 @@
 /*
-  Solve the same problem as in exercise 1, but now the executed function gets two parameters:
-    1. Number: the starting value
-    2. Number: a constant that will be added iteratively
-  Such function must return a function that each time you execute it, adds the constant number to the current value and prints the new value
+  Solve the same problem as in exercise 1, but now we must use two functions:
+  1. The first function gets two parameters and returns a function:
+    1.1. initialNumber (Number).
+    1.2. increment (Number): a constant that will be added iteratively.
+  2. The returned function should be executed without parameters and be able to print the new value.
 */
