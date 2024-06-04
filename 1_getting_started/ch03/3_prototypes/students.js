@@ -6,7 +6,7 @@ Exercise:
 - id (generated with crypto.randomUUID)
 - current_subjects: ["html", "css", "javascript", "react", "redux", "cypress", "mondodb", "postgresql", "nodejs", "expressjs", "playwright", "aws", "azure", "jenkins", "grafana", "docker", "kubernetes"]
 - scope_preference: ["frontend", "backend", "devops", "fullstack"]
-- payment method: ["paypal", "debit card", "credit card", "cash"]
+- payment_method: ["paypal", "debit card", "credit card", "cash"]
 3. Apart from these attributes, take into account that:
 - a new student always starts as fullstack in scope_preference, and html, css, javascript, react and node as current_subjects.
 - a new student always starts with cash as its default payment method.
