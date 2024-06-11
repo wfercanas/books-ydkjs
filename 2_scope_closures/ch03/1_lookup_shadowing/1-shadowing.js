@@ -2,7 +2,8 @@
 1- Read the code and discuss about what this program is about without running it.
 2- Write down what you think is wrong in the program without running it.
 3- Compare with your colleagues what you wrote.
-4- Try to make the program work (refactor) using pure functions.
+4- Try to make it work as is with adding/refactoring what you see fit.
+5- Refactor to make the program work (refactor) using pure functions.
 */
 
 let order = [];
