@@ -1,20 +1,3 @@
-/*
-Targets:
-1- 
-2-
-3- 
-4-
-5- 
-
-Sources:
-1- 
-2- 
-3- 
-4- 
-5-
-6-
-*/
-
 var students = [
   { id: 14, name: "Kyle" },
   { id: 73, name: "Suzy" },
@@ -32,3 +15,20 @@ function getStudentName(studentID) {
 
 var nextStudent = getStudentName(73);
 console.log(nextStudent);
+
+/*
+Targets:
+1- 
+2-
+3- 
+4-
+5- 
+
+Sources:
+1- 
+2- 
+3- 
+4- 
+5-
+6-
+*/
