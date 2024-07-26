@@ -9,14 +9,14 @@ print("TC39"); // What happens?  --> Does this work?
 print = "JS rocks!";
 
 // 2
-// print("ECMA262"); // What happens?  --> TypeError
+// print("ECMA262"); // What happens? -->
 
 function print(text) {
   console.log(text);
 }
 
 // 3
-// print("ES+"); // What happens?  --> TypeError
+// print("ES+"); // What happens? -->
 
 var print;
 
@@ -27,4 +27,4 @@ function print() {
 }
 
 // 4
-// print("JS"); // What happens?  --> TypeError
+// print("JS"); // What happens? -->
