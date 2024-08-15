@@ -9,6 +9,8 @@
   - distance: meters. Distance between the store and the address of the recipient of the order.
   - value: money. Equal to the sum of the price*quantities in each item
   - cost: money. Cost of the delivery.
+  Consider:
+  - Each discount must be applied directly using the base cost.
 */
 
 // CODE BELOW -->
@@ -68,7 +70,7 @@ testDeliveryCost(
     items: [{ name: "kitten pins", price: 8000, quantity: 5 }],
     distance: 20,
   },
-  4000
+  4750
 );
 testDeliveryCost(
   "Far, short, and cheap",
@@ -84,7 +86,7 @@ testDeliveryCost(
   {
     value: 40000,
     items: [{ name: "kitten pins", price: 8000, quantity: 5 }],
-    distance: 20,
+    distance: 2000,
   },
   13300
 );
