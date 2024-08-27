@@ -1,15 +1,15 @@
 // IIFE
 
-/* 1-->
+// 1-->
 // Does this work?
-(() => {
-  console.log("Can an arrow work by itself?");
-})();
-*/
+// (() => {
+//   console.log("Can an arrow work by itself?");
+// })();
+//
 
-/* 2-->
+// 2-->
 // Does this work?
-(function print() {
-  console.log("Can a declaration work by itself?");
-})();
-*/
+// (function print() {
+//   console.log("Can a declaration work by itself?");
+// })();
+//
