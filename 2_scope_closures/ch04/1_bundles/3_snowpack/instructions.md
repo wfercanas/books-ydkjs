@@ -2,7 +2,7 @@
 
 ## Scope
 
-This exercise is about bundling a small project using **snowpack**. This project doesn't tries to use the simplest configuration so you can just check the process of bundling at its easier to grasp form.
+This exercise is about bundling a small project using **snowpack**. This project tries to use the simplest configuration so you can just check the process of bundling at its easier to understand form.
 
 ## Instructions
 
@@ -16,7 +16,7 @@ This exercise is about bundling a small project using **snowpack**. This project
 6. Inside **index.html**, add the following script so we can use lodash: `<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>`
 7. Check this website to see what you can do with lodash: https://lodash.com/docs/4.17.15 . Notice how each method belongs to the `_` object.
 8. Check what does the `_.join()` method do in lodash.
-9. In **index.js**, create the Greeting component. This component is a function that is able to get an array of strings, join them using `_.join()` and insert them into the #root element of the HTML document.
+9. In **index.js**, create a Greeting component. This component is a function that is able to get an array of strings, join them using `_.join()` and insert them into the #root element of the HTML document.
 10. Don't export Greeting.
 11. Execute `Greeting(["Hello", "World"])` at the end of **index.js**.
 12. Add **index.js** as a script in **index.html**
@@ -33,17 +33,17 @@ This exercise is about bundling a small project using **snowpack**. This project
 7. Check that the greeting is no longer printed on screen.
 8. Now `import _ from 'lodash'` in **index.js**
 9. Execute `npx snowpack build`.
-10. Copy **index.html** and paste it in dist/.
-11. Inside the copied **index.html** in dist, change the **src** of the remaining script to `src="index.js"`.
+10. Copy **index.html** and paste it in build/.
+11. Inside the copied **index.html** in build, change the **src** of the remaining script to `src="index.js"` and add `type="module"`.
 12. ❓ **Answer question #1 (Check the next section of this document).**
-13. The code looks like it is not being minified, go to snowpack.config.js, add the property `optimized: { minify: true }`
+13. The code looks like it is not being minified, go to snowpack.config.js, add the property `optimize: { minify: true }` after the buildOptions object.
 14. Run the build process again.
-15. Open preview of **index.html** and check if the project still works --at this point, your script tag should use the `type=module` attribute to work because we're using import statements--.
+15. Open preview of **index.html** and check if the project still works.
 
 ## Questions
 
-1. Is the code in dist/index.js just like in src/index.js?
+1. Is the code in build/index.js just like in src/index.js?
 2. Did the new config affect the result of the bundle? How?
-3. Which of the three versions of stitching separate files to make them work together do you see? (ydkjs lecture)
+3. Which of the three versions of joining separate files to make them work together do you see? (ydkjs lecture)
 4. How many kB does index.js use?
 5. How many seconds does the build process last?
