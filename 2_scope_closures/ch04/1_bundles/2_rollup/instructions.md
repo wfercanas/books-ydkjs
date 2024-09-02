@@ -31,20 +31,20 @@ This exercise is about bundling a small project using **rollup**. This project d
 4. Check that the greeting is no longer printed on screen.
 5. Install lodash as a dependency of the project: `npm install --save lodash`
 6. Now `import _ from 'lodash'` in **index.js**
-7. Inside **index.html**, change the **src** of the remaining script to `src="main.js"`. This is because the bundling process will create this file in **dist/**.
+7. Inside **index.html**, change the **src** of the remaining script to `src="main.js"` and add `type="module"`. This is because the bundling process will create this file in **dist/**.
 8. Run `npx rollup src/index.js -o dist/main.js -f es`. The output will be generated using ES Modules and without a config file.
 9. ❓ **Answer question #1 (Check the next section of this document).**
 10. Create the file **rollup.config.mjs** in the root directory of the project.
 11. In config file, copy the initial config you see in the Initial config section below. This initial config just expresses the same content we used in the previously executed command.
-12. Delete main.js and now run `npx rollup --config`. Confirm that the bundle keeps working as in the initial execution.
+12. Delete main.js and now run `npx rollup --config`. Confirm that the bundle produces the same main.js as before.
 13. If everything is ok, you can create a new script in **package.json** like this: `"build": "npx rollup --config"`. From now on, we can just execute `npm run build` to achieve the same results.
 14. Check main.js and see that the code is not minified. We must install a plugin for that. Run `npm install @rollup/plugin-terser --save-dev`.
-15. `import terser from @rollup/plugin-terser` in config file.
+15. `import terser from "@rollup/plugin-terser"` in config file.
 16. Add `terser()` to the plugins array in config file. Should look like: `plugins: [terser()]`.
 17. Execute `npm run build`.
 18. ❓ **Answer question #2.**
-19. Open preview of **index.html** and check if the project still works --at this point, your script tag should use the `type=module` attribute to work because we're using import statements--.
-20. Rollup only includes in the build our code and that of relative imports, not node_module imports. Because we're importing lodash and rollup excludes it, our project doesn't work. We will need another plugin to fix this.
+19. Open preview of **index.html** and check if the project works (does it?).
+20. Rollup only includes in the build code of relative imports, not node_module imports. Because we're importing lodash and rollup excludes it, our project doesn't work. We will need another plugin to fix this.
 21. Run `npm install @rollup/plugin-node-resolve --save-dev`.
 22. `import nodeResolve from '@rollup/plugin-node-resolve'` and add `nodeResolve()` to plugins array in config file.
 23. Run `npm run build`.
@@ -59,7 +59,7 @@ This exercise is about bundling a small project using **rollup**. This project d
 
 1. Is the code in main.js just like in index.js?
 2. Did the plugin affect the result of the bundle? How?
-3. Which of the three versions of stitching separate files to make them work together do you see? (ydkjs lecture)
+3. Which of the three versions of joining separate files to make them work together do you see? (ydkjs lecture)
 4. How many kB does main.js use?
 5. How many seconds does the build process last?
 
