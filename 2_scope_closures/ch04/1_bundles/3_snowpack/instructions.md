@@ -33,8 +33,8 @@ This exercise is about bundling a small project using **snowpack**. This project
 7. Check that the greeting is no longer printed on screen.
 8. Now `import _ from 'lodash'` in **index.js**
 9. Execute `npx snowpack build`.
-10. Copy **index.html** and paste it in build/.
-11. Inside the copied **index.html** in build, change the **src** of the remaining script to `src="index.js"` and add `type="module"`.
+10. Copy **index.html** and paste it in dist/.
+11. Inside the copied **index.html** in dist, change the **src** of the remaining script to `src="index.js"` and add `type="module"`.
 12. ❓ **Answer question #1 (Check the next section of this document).**
 13. The code looks like it is not being minified, go to snowpack.config.js, add the property `optimize: { minify: true }` after the buildOptions object.
 14. Run the build process again.
@@ -42,8 +42,8 @@ This exercise is about bundling a small project using **snowpack**. This project
 
 ## Questions
 
-1. Is the code in build/index.js just like in src/index.js?
+1. Is the code in dist/index.js just like in src/index.js?
 2. Did the new config affect the result of the bundle? How?
 3. Which of the three versions of joining separate files to make them work together do you see? (ydkjs lecture)
-4. How many kB does index.js use?
+4. How many kB does dist/ use?
 5. How many seconds does the build process last?
