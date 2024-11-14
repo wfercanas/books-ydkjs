@@ -6,10 +6,13 @@
  - You can code inside/outside the blocks. 
 */
 
+// You can change the definitions of both blocks
 {
+  // hello must be a const
   const hello = "Hello";
 }
 {
+  // world must be a const
   const world = "World";
 }
 

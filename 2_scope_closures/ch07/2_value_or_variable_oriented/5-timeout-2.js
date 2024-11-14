@@ -6,7 +6,7 @@
 
 var keeps = [];
 
-for (let i = 0; i < 3; i++) {
+for (var i = 0; i < 3; i++) {
   setTimeout(() => {
     keeps[i] = () => i;
   }, 1000);
